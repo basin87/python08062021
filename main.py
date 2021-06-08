@@ -1,21 +1,21 @@
-# This is a sample Python script.
+#Задание №3
+#import this #Философия Python
+#import antigravity #Открывает в браузере комикс
+#import __hello__ #Замороженный модуль, который выдает результат "Hello world"
+#from __future__ import braces #Будущее утверждение - это директива для компилятора о том, что определенный модуль должен быть скомпилирован с использованием синтаксиса или семантики, которые будут доступны в указанном будущем выпуске Python. Будущее утверждение предназначено для облегчения перехода на будущие версии Python, которые вносят несовместимые изменения в язык
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-import this
-import antigravity
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
+#Задание №4
 from art import *
-tprint ("Viktor")
+tprint("Viktor")
+
+#Задание №5
+a=int(input("Введите число A:"))
+b=int(input("Введите число B:"))
+symma=(a+b)
+delenie=(a//b)
+ostatok=(a%b)
+stepen=(a**b)
+print("Сумма чисел:",symma)
+print("Целочисленное деления:",delenie)
+print("Остаток от деления:",ostatok)
+print("Степень числа:",stepen)
