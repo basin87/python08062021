@@ -3,6 +3,8 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 
+import this
+import antigravity
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
@@ -15,4 +17,5 @@ if __name__ == '__main__':
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
-print('test4')
+from art import *
+tprint ("Viktor")
