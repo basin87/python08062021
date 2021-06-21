@@ -1,0 +1,80 @@
+# Задача №1
+number3 = int(input("Введите трёхзначное число: "))
+number1 = (number3 // 100)
+number2 = ((number3 // 10) % 10)
+number = (number3 % 10)
+summa = (number1 + number2 + number)
+print(number1, number2, number)
+print(summa)
+
+# №Задание №2
+x = float(input("Введите вещественное число c двумя знаками после точки: "))
+drob = ((x*100) % 100)
+floatnumber = ((drob/10) // 1)
+print(f"Дробная часть числа {x}:", drob,f"\nПервая цифра после десятичной точки числа {x}:", drob)
+
+#Задание №3
+list_ten=[]
+for elements in range(10,60,10):
+    list_ten.append(elements)
+print(f"Cписок от 10 до 50: {list_ten}")
+list_ten.reverse()
+print (f"Реверсивный список: {list_ten}")
+
+# Задание №4
+list_of_six = []
+for elements in range(100, 202, 6):
+    list_of_six.append(elements)
+print("Список: ",list_of_six)
+for num in list_of_six:
+    if (num % 5)==0 and num <= 150:
+        print("Число из списка,которое делится на 5 и не больше 150: ",num)
+
+#Задание №5
+#№1 попытка
+import random
+player1=int(input("Попытка №1.Введите число от 1 до 10: "))
+player2=random.randint(0,10)
+print(player1,player2)
+if player1>player2 or player1<player2:
+    print("You lose!")
+else:
+    print("You win!")
+#№2 попытка
+player3=int(input("Попытка №2.Введите число от 1 до 10: "))
+player4=random.randint(0,10)
+print(player3,player4)
+if player3>player4 or player3<player4:
+    print("You lose!")
+else:
+    print("You win!")
+#№3 попытка
+player5=int(input("Попытка №3.Введите число от 1 до 10: "))
+player6=random.randint(0,10)
+print(player5,player6)
+if player5>player6 or player5<player6:
+    print("You lose!")
+else:
+    print("You win!")
+
+#Задача №6**
+x1 = int(input("Ввести координаты первой клетки по оси Х: "))
+y1 = int(input("Ввести координаты первой клетки по оси Y: "))
+x2 = int(input("Ввести координаты второй клетки по оси Х: "))
+y2 = int(input("Ввести координаты второй клетки по оси Y: "))
+if (x1+y1+x2+y2) % 2 == 0:
+    print("Yes")
+else:
+    print("No")
+#Как я понял эту задачу,то решение: если сложить сумму всех номеров столбцов,строк и эта сумма кратная 2,то значит
+#цвета где находится фигуры одинаковые, иначе если цвета разные, то и сумма не кратная 2
+
+
+#Задание №7**
+number=int(input("Введите любое число: "))
+faktorial = 1
+for item in range(1,number+1):
+    faktorial*=item
+print(f"Факториал числа \'{number}':",faktorial)
+
+print("Конец домашнего задания №3")
