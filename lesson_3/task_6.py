@@ -1,11 +1,13 @@
 #Задача №6**
-x1 = int(input("Ввести координаты первой клетки по оси Х: "))
-y1 = int(input("Ввести координаты первой клетки по оси Y: "))
-x2 = int(input("Ввести координаты второй клетки по оси Х: "))
-y2 = int(input("Ввести координаты второй клетки по оси Y: "))
-if (x1+y1+x2+y2) % 2 == 0:
-    print("Yes")
+x1 = int(input("Enter current X location : "))
+y1 = int(input("Enter current Y location : "))
+x2 = int(input("Enter the current location : "))
+y2 = int(input("Enter the current location : "))
+
+data_x = abs(x2 - x1)
+data_y = abs(y2 - y1)
+
+if data_x == 1 and data_y == 2 or data_x == 2 and data_y == 1:
+    print("Yes, your move will be ok!")
 else:
-    print("No")
-#Как я понял эту задачу,то решение: если сложить сумму всех номеров столбцов,строк и эта сумма кратная 2,то значит
-#цвета где находится фигуры одинаковые, иначе если цвета разные, то и сумма не кратная 2
+    print("Sorry, your position is wrong")
