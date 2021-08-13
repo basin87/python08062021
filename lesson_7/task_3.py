@@ -1,4 +1,4 @@
-import requests
+
 import datetime
 
 city = input("Enter name of your city: ")
